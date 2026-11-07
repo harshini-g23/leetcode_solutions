@@ -6,7 +6,7 @@ public:
         int sum;
        int n=nums.size();
         sort(nums.begin(),nums.end());
-        for(i=0;i<n;i++){
+        for(i=0;i<n-2;i++){
             left=i+1;
             right=n-1;
             //skipping duplicates
