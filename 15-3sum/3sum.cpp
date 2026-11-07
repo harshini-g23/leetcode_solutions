@@ -9,7 +9,8 @@ public:
         for(i=0;i<n;i++){
             left=i+1;
             right=n-1;
-            if( i>0 && nums[i]==nums[i-1])
+            //skipping duplicates
+            if(i>0 && nums[i]==nums[i-1])
             continue;
             while(left<right){
                 sum=nums[i]+nums[left]+nums[right];
